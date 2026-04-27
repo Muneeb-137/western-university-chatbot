@@ -1,0 +1,80 @@
+export const topics = [
+  {
+    slug: "course-registration",
+    title: "Course Registration",
+    description: "Get help with enrolling in courses, swapping sections, and managing your timetable.",
+    image: "/thumbnails/course-registration.svg",
+  },
+  {
+    slug: "draft-my-schedule",
+    title: "Draft My Schedule",
+    description: "Plan and draft your ideal class schedule for the upcoming term.",
+    image: "/thumbnails/draft-schedule.svg",
+  },
+  {
+    slug: "degrees-diplomas",
+    title: "Degrees/Diplomas",
+    description: "Information about degree requirements, program changes, and diploma options.",
+    image: "/thumbnails/degrees-diplomas.svg",
+  },
+  {
+    slug: "graduation-convocation",
+    title: "Graduation/Convocation",
+    description: "Details on graduation applications, ceremonies, and convocation dates.",
+    image: "/thumbnails/graduation.svg",
+  },
+  {
+    slug: "bursary-work-study",
+    title: "Bursary/Work Study",
+    description: "Learn about bursary programs and on-campus work-study opportunities.",
+    image: "/thumbnails/bursary-workstudy.svg",
+  },
+  {
+    slug: "osap-loans",
+    title: "OSAP or Out of Province Loans",
+    description: "Guidance on OSAP applications, out-of-province student loans, and funding.",
+    image: "/thumbnails/osap-loans.svg",
+  },
+  {
+    slug: "tuition-deposits-refunds",
+    title: "Tuition, Deposits, & Refunds",
+    description: "Find answers about tuition fees, deposit requirements, and refund policies.",
+    image: "/thumbnails/tuition-deposits.svg",
+  },
+  {
+    slug: "financial-aid-counselling",
+    title: "Financial Aid Counselling",
+    description: "Connect with financial aid counsellors for personalized support.",
+    image: "/thumbnails/financial-counselling.svg",
+  },
+  {
+    slug: "official-western-letters",
+    title: "Official Western Letters",
+    description: "Request official letters such as enrollment verification and confirmation letters.",
+    image: "/thumbnails/official-letters.svg",
+  },
+  {
+    slug: "third-party-forms",
+    title: "Third Party Forms",
+    description: "Submit and process forms required by external organizations and agencies.",
+    image: "/thumbnails/third-party-forms.svg",
+  },
+  {
+    slug: "transcripts",
+    title: "Transcripts",
+    description: "Order official transcripts for academic records and credential verification.",
+    image: "/thumbnails/transcripts.svg",
+  },
+  {
+    slug: "western-onecard",
+    title: "Western ONECard",
+    description: "Manage your Western ONECard for campus identification, building access, and payments.",
+    image: "/thumbnails/onecard.svg",
+  },
+  {
+    slug: "other",
+    title: "Other",
+    description: "Have a different question? Ask about any other student services topic.",
+    image: "/thumbnails/other.svg",
+  },
+];
