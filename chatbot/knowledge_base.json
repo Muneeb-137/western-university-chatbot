@@ -1,0 +1,312 @@
+[
+  {
+    "category": "greeting",
+    "question": "Hello, can you help me?",
+    "answer": "Hello! I can help you with Western University services such as course registration, tuition, OSAP, transcripts, official letters, graduation, OneCard, Student Center, and help requests."
+  },
+  {
+    "category": "greeting",
+    "question": "What can this chatbot do?",
+    "answer": "I can guide you through common Western University student services. You can ask about registration, tuition, OSAP, transcripts, official letters, graduation, OneCard, academic advising, Student Center, OWL/Brightspace, or submitting a help request."
+  },
+  {
+    "category": "course_registration",
+    "question": "How do I register for courses?",
+    "answer": "To register for courses, log in to Student Center, go to the enrollment or course registration section, search for your course, add it to your enrollment cart, and confirm enrollment. Make sure you check prerequisites, course restrictions, and your enrollment appointment time."
+  },
+  {
+    "category": "course_registration",
+    "question": "How do I add a course?",
+    "answer": "To add a course, log in to Student Center, search for the course, choose the correct lecture, lab, or tutorial section, add it to your cart, and confirm enrollment. After enrolling, check your timetable to make sure the course was added."
+  },
+  {
+    "category": "course_registration",
+    "question": "How do I drop a course?",
+    "answer": "To drop a course, go to Student Center and use the enrollment or course drop section. Before dropping, check the academic deadline, financial impact, OSAP impact, and whether the course is required for your program."
+  },
+  {
+    "category": "course_registration",
+    "question": "Why can I not enroll in a course?",
+    "answer": "You may not be able to enroll if the course is full, restricted to a program or year, has prerequisites you have not completed, conflicts with another course, or your enrollment appointment has not started yet."
+  },
+  {
+    "category": "schedule",
+    "question": "How do I build my timetable?",
+    "answer": "To build your timetable, first list your required courses, then add electives, check prerequisites, compare lecture/lab/tutorial sections, avoid time conflicts, and then officially enroll through Student Center."
+  },
+  {
+    "category": "schedule",
+    "question": "Can you help me plan my course schedule?",
+    "answer": "Yes. Start by identifying your required courses, then choose electives, check for prerequisites, and make sure lectures, labs, and tutorials do not overlap. For program-specific advice, contact your faculty academic counselling office."
+  },
+  {
+    "category": "tuition",
+    "question": "How do I pay tuition?",
+    "answer": "You can usually pay tuition through online banking by adding Western University as a bill payee and using your student number as the account number. First check your balance in Student Center under your financial account or statement of account."
+  },
+  {
+    "category": "tuition",
+    "question": "Where can I check my tuition balance?",
+    "answer": "You can check your tuition balance in Student Center under your financial account or statement of account. It may show tuition, residence, meal plan, scholarships, OSAP payments, and other charges."
+  },
+  {
+    "category": "tuition",
+    "question": "Why do I still have a balance after paying tuition?",
+    "answer": "Payments can take a few business days to appear. Your balance may also include residence fees, meal plan charges, late fees, or other student account charges. Check your statement of account for details."
+  },
+  {
+    "category": "tuition",
+    "question": "When are tuition fees due?",
+    "answer": "Tuition deadlines depend on the academic term. Check Western's official fee deadline dates in Student Center or on the Registrar's website. Paying late may result in late fees or account restrictions."
+  },
+  {
+    "category": "osap",
+    "question": "How do I apply for OSAP?",
+    "answer": "To apply for OSAP, use the official OSAP website, select Western University as your school, complete the application, upload required documents, complete your MSFAA if needed, and wait for confirmation of enrollment before funding is released."
+  },
+  {
+    "category": "osap",
+    "question": "Why has my OSAP not arrived?",
+    "answer": "If your OSAP has not arrived, check your OSAP application status, required documents, MSFAA status, confirmation of enrollment, and your Student Center account. Funding may not release until all steps are complete."
+  },
+  {
+    "category": "osap",
+    "question": "Can OSAP pay my tuition directly?",
+    "answer": "OSAP funding may be directed to your tuition account first, depending on your application and funding setup. Check both your OSAP account and Western Student Center to confirm how the payment was applied."
+  },
+  {
+    "category": "financial_aid",
+    "question": "Where can I get financial aid?",
+    "answer": "Western may offer scholarships, bursaries, work-study opportunities, and other financial assistance. Check Student Center and Western's financial aid resources, or submit a help request if you need guidance."
+  },
+  {
+    "category": "transcripts",
+    "question": "How do I get my transcript?",
+    "answer": "You can usually access unofficial academic records through Student Center. Official transcripts must be requested through Western's official transcript ordering process."
+  },
+  {
+    "category": "transcripts",
+    "question": "How do I order an official transcript?",
+    "answer": "To order an official transcript, log in to Student Center, go to academic records or transcript request, choose the transcript type and delivery method, enter recipient details if required, and complete payment if applicable."
+  },
+  {
+    "category": "transcripts",
+    "question": "What is the difference between official and unofficial transcript?",
+    "answer": "An unofficial transcript is usually for personal viewing and can often be accessed through Student Center. An official transcript is formally issued by the university and may be required by employers, graduate schools, or other institutions."
+  },
+  {
+    "category": "official_letters",
+    "question": "How do I get proof of enrollment?",
+    "answer": "Proof of enrollment or student status letters can usually be requested through Student Center or the Office of the Registrar. Make sure the letter includes the details required by the organization requesting it."
+  },
+  {
+    "category": "official_letters",
+    "question": "How do I get an enrollment letter?",
+    "answer": "To get an enrollment letter, log in to Student Center and look for official documents, letters, or proof of enrollment. Select the letter type, confirm your information, and download or request delivery."
+  },
+  {
+    "category": "official_letters",
+    "question": "I need a letter for immigration or study permit.",
+    "answer": "For immigration or study permit purposes, you may need an official enrollment or student status letter. Make sure the letter includes your program, enrollment status, and dates if required. For immigration-specific advice, contact international student support."
+  },
+  {
+    "category": "graduation",
+    "question": "How do I apply to graduate?",
+    "answer": "To apply for graduation, log in to Student Center and look for the graduation application section. Review your degree requirements, submit the application before the deadline, and watch for convocation updates."
+  },
+  {
+    "category": "graduation",
+    "question": "How do I know if I am eligible to graduate?",
+    "answer": "To check graduation eligibility, review your degree requirements, academic record, and program checklist. If you are unsure, contact your faculty academic counselling office before applying to graduate."
+  },
+  {
+    "category": "graduation",
+    "question": "What is convocation?",
+    "answer": "Convocation is the graduation ceremony where degrees are officially awarded. After applying to graduate, watch for ceremony details, guest information, gown rental instructions, and diploma information."
+  },
+  {
+    "category": "onecard",
+    "question": "How do I get my Western OneCard?",
+    "answer": "Your Western OneCard is your student ID card. To get one, you may need to upload a photo, confirm your student information, and follow Western's pickup instructions."
+  },
+  {
+    "category": "onecard",
+    "question": "What should I do if I lost my OneCard?",
+    "answer": "If you lost your OneCard, report it as soon as possible and follow Western's replacement process. There may be a replacement fee, and reporting it helps protect your card access and funds."
+  },
+  {
+    "category": "onecard",
+    "question": "My OneCard is not working.",
+    "answer": "If your OneCard is not working, check whether the issue is with door access, meal plan, library access, or identification. You may need to contact the OneCard office or the relevant campus service."
+  },
+  {
+    "category": "student_center",
+    "question": "What is Student Center?",
+    "answer": "Student Center is Western's main student portal for course registration, tuition balances, academic records, personal information, transcripts, official letters, and other student services."
+  },
+  {
+    "category": "student_center",
+    "question": "I cannot log in to Student Center.",
+    "answer": "If you cannot log in to Student Center, check your Western ID, password, internet connection, and multi-factor authentication. Try another browser or clear your cache. If the problem continues, contact Western technology support."
+  },
+  {
+    "category": "student_center",
+    "question": "Student Center is not working.",
+    "answer": "If Student Center is not working, refresh the page, clear your browser cache, try another browser, or check whether Western systems are temporarily unavailable. If the issue continues, contact support."
+  },
+  {
+    "category": "western_login",
+    "question": "I forgot my Western password.",
+    "answer": "If you forgot your Western password, use Western's password reset process. You may need your Western ID and multi-factor authentication method to regain access."
+  },
+  {
+    "category": "western_login",
+    "question": "I am locked out of my Western account.",
+    "answer": "If you are locked out of your Western account, try the password reset process or contact Western technology support. If you changed phones, you may also need help with multi-factor authentication."
+  },
+  {
+    "category": "western_login",
+    "question": "I have a problem with Duo or MFA.",
+    "answer": "For Duo or multi-factor authentication issues, check your registered device and authentication method. If you changed phones or lost access to your device, contact Western technology support."
+  },
+  {
+    "category": "academic_advising",
+    "question": "How do I contact academic advising?",
+    "answer": "For academic advising, contact your faculty academic counselling office. They can help with degree requirements, course selection, progression, special permissions, and graduation eligibility."
+  },
+  {
+    "category": "academic_advising",
+    "question": "Who can help me choose courses?",
+    "answer": "An academic advisor can help you choose courses based on your program requirements. Contact your faculty academic counselling office for program-specific advice."
+  },
+  {
+    "category": "academic_advising",
+    "question": "I need help with my degree requirements.",
+    "answer": "For degree requirement questions, contact your faculty academic counselling office. They can review your academic record and help confirm what courses or requirements you still need."
+  },
+  {
+    "category": "deadlines",
+    "question": "When is the last day to drop a course?",
+    "answer": "Course drop deadlines depend on the academic term and course type. Check Western's official sessional dates or academic calendar before dropping a course."
+  },
+  {
+    "category": "deadlines",
+    "question": "When is the last day to add a course?",
+    "answer": "The last day to add a course depends on the term and course session. Check Western's official academic dates and your Student Center enrollment information."
+  },
+  {
+    "category": "deadlines",
+    "question": "What happens if I miss an academic deadline?",
+    "answer": "If you miss an academic deadline, contact your faculty academic counselling office as soon as possible. Depending on the situation, you may need documentation or a formal request."
+  },
+  {
+    "category": "exams",
+    "question": "Where can I find my exam schedule?",
+    "answer": "Exam schedules are usually posted through Western's exam timetable, Student Center, or your course information. Always confirm the date, time, and location before the exam."
+  },
+  {
+    "category": "exams",
+    "question": "What should I do if I have an exam conflict?",
+    "answer": "If you have an exam conflict, contact your instructor or faculty academic counselling office as soon as possible. You may need to follow Western's conflict or special exam process."
+  },
+  {
+    "category": "exams",
+    "question": "What should I do if I missed an exam?",
+    "answer": "If you missed an exam, contact your instructor and faculty academic counselling office immediately. You may need documentation and approval for a deferred or special exam."
+  },
+  {
+    "category": "grades",
+    "question": "Where can I see my grades?",
+    "answer": "Final grades are usually posted in Student Center after they are submitted and approved. Course marks may also appear in OWL or Brightspace depending on the instructor."
+  },
+  {
+    "category": "grades",
+    "question": "My grade is not posted.",
+    "answer": "If your grade is not posted, it may not have been submitted or processed yet. Check with your instructor first if you believe there is an issue."
+  },
+  {
+    "category": "grades",
+    "question": "How do I appeal a grade?",
+    "answer": "For grade appeals, review your course outline and faculty policies. Start by speaking with the instructor and make sure you follow the official appeal process and deadlines."
+  },
+  {
+    "category": "owl_brightspace",
+    "question": "What is OWL or Brightspace?",
+    "answer": "OWL or Brightspace is used for course materials, announcements, quizzes, assignments, and grades depending on the course."
+  },
+  {
+    "category": "owl_brightspace",
+    "question": "My course is not showing on OWL or Brightspace.",
+    "answer": "If a course is not showing in OWL or Brightspace, check whether you are officially enrolled and wait for the system to update. If it still does not appear, contact your instructor or technical support."
+  },
+  {
+    "category": "owl_brightspace",
+    "question": "I cannot submit my assignment online.",
+    "answer": "If you cannot submit an assignment online, take screenshots, record the time, check your internet connection, and contact your instructor or technical support before the deadline if possible."
+  },
+  {
+    "category": "library",
+    "question": "How do I use Western Libraries?",
+    "answer": "Western Libraries can help with study spaces, research support, borrowing books, databases, journal access, and citation help. You can access many library services online."
+  },
+  {
+    "category": "library",
+    "question": "How do I book a study room?",
+    "answer": "To book a study room, use Western Libraries' online booking system if available. Choose a library, date, time, and room, then confirm your booking."
+  },
+  {
+    "category": "library",
+    "question": "Can the library help with research?",
+    "answer": "Yes. Western Libraries can help with research guides, databases, journal articles, citations, and librarian support."
+  },
+  {
+    "category": "campus_map",
+    "question": "How do I find a building on campus?",
+    "answer": "Use Western's campus map to find buildings, classrooms, libraries, residences, parking lots, and student services. Check your timetable for the building and room code."
+  },
+  {
+    "category": "campus_map",
+    "question": "Where is my class located?",
+    "answer": "Check your timetable for the building and room code, then use Western's campus map to find the location. It is a good idea to check before your first class."
+  },
+  {
+    "category": "registrar",
+    "question": "How do I contact the Registrar?",
+    "answer": "For official student record, tuition, transcript, letter, and registration questions, contact Western's Office of the Registrar or Student Central."
+  },
+  {
+    "category": "registrar",
+    "question": "Who should I contact for student services?",
+    "answer": "If your issue is about official records, fees, transcripts, letters, or registration, contact the Registrar or Student Central. If it is about program requirements, contact your faculty academic counselling office."
+  },
+  {
+    "category": "help_request",
+    "question": "How do I submit a help request?",
+    "answer": "Go to the Help page and complete the form. Include your name, student number, Western ID, email, subject, and a clear explanation of your question."
+  },
+  {
+    "category": "help_request",
+    "question": "I need to talk to someone.",
+    "answer": "If the chatbot cannot answer your question, use the Help page to submit a request. Provide as much detail as possible so the correct support team can review it."
+  },
+  {
+    "category": "technical_issue",
+    "question": "The website is not working.",
+    "answer": "If the website is not working, refresh the page, check your internet connection, try a different browser, and clear your cache. If the problem continues, submit a help request with screenshots."
+  },
+  {
+    "category": "technical_issue",
+    "question": "The help form is not submitting.",
+    "answer": "If the help form is not submitting, make sure all required fields are completed, your email is valid, and your internet connection is working. If it still fails, try another browser."
+  },
+  {
+    "category": "privacy",
+    "question": "Is my information safe?",
+    "answer": "Only provide information needed for your request. For a real production system, student information should be protected using secure connections, access controls, authentication, and privacy policies."
+  },
+  {
+    "category": "fallback",
+    "question": "I have another question.",
+    "answer": "I am not completely sure about that yet. You can ask me about registration, tuition, OSAP, transcripts, official letters, graduation, OneCard, Student Center, or submit a help request."
+  }
+]

@@ -10,9 +10,11 @@ interface Message {
   content: string
 }
 
-export function ChatWidget() {
+export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const [input, setInput] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
+
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "welcome",
@@ -21,12 +23,13 @@ export function ChatWidget() {
         "Hello! I'm the Western University Student Services assistant. How can I help you today? You can ask me about course registration, financial aid, transcripts, and more.",
     },
   ])
+
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  }, [messages])
+  }, [messages, isLoading])
 
   useEffect(() => {
     if (isOpen) {
@@ -34,26 +37,55 @@ export function ChatWidget() {
     }
   }, [isOpen])
 
-  const handleSend = () => {
-    if (!input.trim()) return
+  const handleSend = async () => {
+    const userText = input.trim()
+
+    if (!userText || isLoading) return
+
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
-      content: input.trim(),
+      content: userText,
     }
+
     setMessages((prev) => [...prev, userMessage])
     setInput("")
+    setIsLoading(true)
 
-    // TODO: Replace with actual chatbot logic
-    setTimeout(() => {
+    try {
+      const response = await fetch("http://127.0.0.1:5000/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userText,
+        }),
+      })
+
+      const data = await response.json()
+
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
         content:
-          "Thank you for your question. The chatbot logic is not yet connected. Please check back later for full functionality!",
+          data.response ||
+          "Sorry, I could not understand that. Please try asking in another way.",
       }
+
       setMessages((prev) => [...prev, botMessage])
-    }, 800)
+    } catch (error) {
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: "assistant",
+        content:
+          "I could not connect to the chatbot backend. Make sure Flask is running on http://127.0.0.1:5000.",
+      }
+
+      setMessages((prev) => [...prev, errorMessage])
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -84,6 +116,7 @@ export function ChatWidget() {
               </div>
             </div>
           </div>
+
           <button
             type="button"
             onClick={() => setIsOpen(false)}
@@ -119,6 +152,7 @@ export function ChatWidget() {
                     <Bot className="h-4 w-4" />
                   )}
                 </div>
+
                 <div
                   className={cn(
                     "max-w-[75%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
@@ -131,6 +165,19 @@ export function ChatWidget() {
                 </div>
               </div>
             ))}
+
+            {isLoading && (
+              <div className="flex flex-row gap-2.5">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-western-purple/10 text-western-purple">
+                  <Bot className="h-4 w-4" />
+                </div>
+
+                <div className="max-w-[75%] rounded-2xl rounded-tl-md bg-secondary px-4 py-2.5 text-sm leading-relaxed text-muted-foreground">
+                  Thinking...
+                </div>
+              </div>
+            )}
+
             <div ref={messagesEndRef} />
           </div>
         </div>
@@ -152,9 +199,10 @@ export function ChatWidget() {
               placeholder="Type your question..."
               className="flex-1 rounded-xl border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-western-purple focus:outline-none focus:ring-1 focus:ring-western-purple"
             />
+
             <button
               type="submit"
-              disabled={!input.trim()}
+              disabled={!input.trim() || isLoading}
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-western-purple text-white transition-colors hover:bg-western-purple-dark disabled:opacity-40 disabled:hover:bg-western-purple"
               aria-label="Send message"
             >

@@ -3,7 +3,7 @@ import { Hero } from "@/components/hero"
 import { TopicsSection } from "@/components/topics-section"
 import { FacultySection } from "@/components/faculty-section"
 import { FAQSection } from "@/components/faq-section"
-import { ChatWidget } from "@/components/chat-widget"
+import ChatWidget from "@/components/chat-widget"
 import { Footer } from "@/components/footer"
 
 export default function Page() {
